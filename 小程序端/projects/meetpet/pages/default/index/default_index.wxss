@@ -1,0 +1,263 @@
+@import "../../../style/skin.wxss";
+
+
+
+.main {
+	padding: 0rpx 0rpx 100rpx;
+}
+
+.up {
+	width: 100%;
+}
+
+.up image {
+	width: 100%;
+	border-bottom: 4rpx solid #333;
+}
+
+.down {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10rpx 16rpx;
+	margin-top: -90rpx;
+	z-index: 9999;
+	position: relative;
+}
+
+.menu {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #fff;
+	padding: 20rpx 10rpx;
+	border-radius: 30rpx;
+}
+
+.menu .item {
+	width: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 180rpx;
+
+}
+
+.menu .item .item-inner {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu .item-inner .img {
+	width: 100rpx;
+	height: 100rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--projectColor);
+	border-radius: 40%;
+}
+
+
+.menu .item-inner .img image {
+	width: 60rpx;
+	height: 60rpx;
+}
+
+.menu .item-inner .title {
+	font-size: 24rpx;
+	color: #333;
+	margin-top: 10rpx;
+}
+
+.meet-box {
+	padding: 30rpx 20rpx 30rpx;
+	background-color: #fff;
+	margin-top: 30rpx;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.meet-box .item {
+	background-color: #f2f2f2;
+	width: 140rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30rpx 0;
+	border-radius: 30rpx;
+	margin-right: 20rpx;
+	flex-wrap: nowrap;
+}
+
+.meet-box .item:nth-child(4n+1) {
+	background-color: #FBD100;
+}
+
+.meet-box .item:nth-child(4n+2) {
+	background-color: #F08002;
+	color: #fff;
+}
+
+.meet-box .item:nth-child(4n+2) .title,
+.meet-box .item:nth-child(4n+2) .txt {
+	color: #fff;
+}
+
+.meet-box .item:nth-child(4n+3) {
+	background-color: #30C9B5;
+}
+
+.meet-box .item:nth-child(4n+4) {
+	background-color: #fadbd9;
+}
+
+.meet-box .item>.title {
+	font-size: 38rpx;
+	width: inherit;
+	padding: 0rpx 20rpx;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 20rpx;
+}
+
+.meet-box .item>.txt {
+	font-size: 24rpx;
+	margin-bottom: 20rpx;
+	color: #333;
+}
+
+.meet-box .item>image {
+	width: 120rpx;
+	height: 120rpx;
+}
+
+.vouch-box {
+	padding: 30rpx 20rpx 10rpx;
+	background-color: #fff;
+	border-radius: 20rpx;
+	margin-top: 30rpx;
+	display: flex;
+	flex-direction: column;
+}
+
+.vouch-box .title {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20rpx;
+}
+
+.vouch-box .title .mark {
+	width: 10rpx;
+	height: 30rpx;
+	background-image: linear-gradient(145deg, var(--projectColor), #fff, var(--projectColor));
+	margin-right: 18rpx;
+	border-radius: 10rpx;
+}
+
+.vouch-box .title .txt {
+	font-size: 28rpx;
+	font-weight: bold;
+}
+
+.vouch-box .list {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.vouch-box .list .item {
+	width: 100%;
+	display: flex;
+	border-bottom: 2rpx dotted #ccc;
+	padding: 16rpx 0;
+}
+
+.vouch-box .list .item:last-child {
+	border-bottom: 0;
+}
+
+.vouch-box .list .item .left {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.vouch-box .list .item .left .line {
+	font-size: 26rpx;
+	color: #333;
+}
+
+.vouch-box .list .item .left .bottom {
+	font-size: 22rpx;
+	color: #999;
+}
+
+.vouch-box .list .item .right {
+	margin-left: 10rpx;
+	height: 110rpx;
+	width: 180rpx;
+}
+
+.vouch-box .list .item .right>image {
+	height: inherit;
+	width: inherit;
+	border-radius: 6rpx;
+}
+
+
+
+
+.meet-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20rpx 0rpx;
+}
+
+.meet-list .item {
+	width: calc((100% - 20rpx) / 2);
+	display: flex;
+	background-image: linear-gradient(145deg, #f8f8f8, #fff);
+	margin-bottom: 20rpx;
+	border-radius: 6rpx;
+	padding: 20rpx 14rpx;
+	border: 2rpx solid var(--projectColorLight);
+}
+
+.meet-list .item:nth-child(2n+1) {
+	margin-right: 20rpx;
+}
+
+.meet-list .item .left {
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 10%;
+	margin-right: 12rpx;
+}
+
+.meet-list .item .right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-bottom: 4rpx;
+}
+
+.meet-list .item .right .tt {
+	width: 100%;
+	font-size: 24rpx;
+	color: #333;
+}
+
+.meet-list .item .right .cnt {
+	width: 100%;
+	font-size: 22rpx;
+	color: #999;
+}
